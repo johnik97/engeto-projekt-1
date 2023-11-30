@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --dark-brown: #33292a;
+    --light-brown: #644b4f;
+    --light-black: #333333;
+    --dark-white: #f2f2f2;
+    --light-orange: #efa69d;
+    --dark-orange: #e9877b;
+    --black: #000;
+    --white: #fff;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+nav {
+    background-color: var(--dark-brown);
+    text-align: center;
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    list-style: none;
+    padding: 0 1.5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 1em 1.5em;
+    font-size: 1.25rem;
+    line-height: normal;
+    font-weight: bold;
+}
+
+.icon-menu {
+    width: 32px;
+    height: 24px;
+    padding: 0.5em;
+    margin-left: auto;
+    display: none;
+}
+
+.icon-menu img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-section {
+    background-image: url(/images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg);
+    height: 800px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    color: var(--white);
+    bottom: 5%;
+    right: 20%;
+    font-weight: bold;
+    font-size: 6rem;
+    text-align: right;
+}
+
+.about-section {
+    background-color: var(--white);
+    padding: 6em;
+    display: flex;
+    justify-content: center;
+}
+
+.about-content {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    justify-content: center;
+    gap: 4em;
+}
+
+.about-text-container {
+    position: relative;
+    max-width: 330px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-title {
+    position: relative;
+    line-height: 0;
+}
+
+.about-text {
+    position: relative;
+    text-align: left;
+    flex-grow: 1;
+    font-size: 0.9em;
+}
+
+.about-img-container {
+    text-align: center;
+}
+
+.about-img {
+    max-width: 420px;
+    width: 100%;
+    max-height: 310px;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.what-we-do-section {
+    background-color: var(--dark-brown);
+    height: 600px;
+}
+
+.what-we-do-container {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    padding-top: 3em;
+}
+
+.what-we-do-text {
+    position: absolute;
+    align-items: center;
+    right: 20%;
+    left: 20%;
+}
+
+.what-we-do-icons {
+    position: relative;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 600px;
+    margin-top: 12.5rem;
+    display: inline-flex;
+}
+
+.what-we-do-icon {
+    position: relative;
+    height: 5rem;
+    margin: 0 auto;
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+}
+
+.what-we-do-icon-text {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.5rem;
+    top: 1em;
+}
+
+.our-trips-section {
+    display: flex;
+    height: 800px;
+    margin-top: 5rem;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.group-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+}
+
+.our-trips-title {
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--black);
+    background-color: var(--dark-white);
+    align-items: center;
+    justify-content: center;
+}
+
+.our-trips-section img, .our-trips-title {
+    border-radius: 4px;
+    width: 270px;
+    height: 210px;
+    margin-right: 1.5rem;
+    margin-bottom: 1.25rem;
+    object-fit: cover;
+}
+
+.group-images-1, .group-images-2, .group-images-3 {
+    position: absolute;
+}
+.group-images-2 {
+    margin-top: 14.375rem;
+    display: flex;
+    align-items: center;
+}
+.group-images-3 {
+    margin-top: 28.75rem;
+}
+
+.where-to-go-section {
+    display: flex;
+    height: 400px;
+    position: relative;
+    background-color: var(--light-brown);
+    color: var(--white);
+}
+
+.where-to-go-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.where-to-go-text-wrapper, .where-to-go-title {
+    position: relative;
+    max-width: 580px;
+    margin-top: 5rem;
+    padding: 1em;
+}
+
+.where-to-go-title {
+    max-width: 250px;
+    font-size: 2rem;
+}
+
+.btn-contact-us {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 1em 1.25em;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.reviews-section {
+    position: relative;
+    height: 650px;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews-title-wrapper {
+    position: relative;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews-title {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.reviews-title-text {
+    margin-top: 1.5rem;
+    width: 340px;
+}
+
+.reviews-person-container {
+    display: flex;
+    gap: 6em;
+    margin-top: 6rem;
+}
+
+.reviews-person-1-wrapper, .reviews-person-2-wrapper {
+    width: 375px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.reviews-person-container img {
+    width: 110px;
+    max-width: 110%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.reviews-person-text, .reviews-person-name {
+    margin-top: 2.5rem;
+}
+
+.reviews-person-name {
+    font-weight: bold;
+}
+
+.picture-album-section {
+    position: relative;
+    height: 840px;
+    display: flex;
+    text-align: center;
+    align-items: flex-end;
+}
+
+.picture-album-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.picture-album-container img {
+    max-width: 720px;
+    max-height: 420px;
+    width: 50%;
+    object-fit: cover;
+}
+
+footer {
+    height: auto;
+    background-color: var(--light-black); 
+    display: flex;
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-wrapper-1, .footer-wrapper-2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer-wrapper-1 {
+    color: var(--dark-orange);
+    font-size: 0.75rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-wrapper-2 {
+    color: var(--white);
+    font-size: 0.625rem;
+    margin-top: 0.625rem;
+}
+
+@media screen and (max-width: 768px) {
+    .main-page {
+        max-width: 768px;
+    }
+
+    nav {
+        padding: 0.5em;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    .icon-menu {
+        display: block;
+    }
+
+    .hero-section {
+        height: 600px;
+        background-attachment: scroll;
+    }
+
+    .hero-text {
+        bottom: 5%;
+        right: 10%;
+        font-size: 2rem;
+    }
+
+    .about-section {
+        padding: 2em;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .about-text-container {
+        max-width: 100%;
+    }
+
+    .about-title {
+        font-size: 1.75rem;
+    }
+
+    .about-text {
+        margin-top: 1rem;
+    }
+
+    .what-we-do-section {
+        height: 1000px;
+    }
+
+    .what-we-do-text {
+        right: 10%;
+        left: 10%;
+    }
+
+    .what-we-do-icons {
+        max-width: 100%;
+        margin-top: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .what-we-do-icon {
+        margin-top: 1rem;
+    }
+
+    .what-we-do-icon-text {
+        top: 0.5em
+    }
+
+    .our-trips-section {
+        height: 2000px;
+    }
+
+    .our-trips-section .group-images {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1.5rem;
+    }
+
+    .group-images img {
+        width: 100%;
+        height: 210px;
+        margin-bottom: 0.625rem;
+    }
+
+    .group-images .our-trips-title {
+        width: 100%;
+        height: 105px;
+        margin-bottom: 0.625rem;
+    }
+
+    .group-images-2 {
+        margin-top: calc((210px + 0.625rem) * 3);
+    }
+
+    .group-images-3 {
+        margin-top: calc((210px + 0.625rem) * 6 - 105px);
+    }
+
+    .where-to-go-section {
+        height: auto;
+    }
+
+    .where-to-go-container {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .where-to-go-title {
+        display: flex;
+        max-width: 100%;
+        margin-bottom: 0.75rem;
+        margin-top: 1rem;
+    }
+
+    .where-to-go-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .btn-contact-us {
+        align-self: flex-start;
+    }
+
+    .where-to-go-text {
+        max-width: 100%;
+    }
+
+    .reviews-section {
+        height: auto;
+        margin-top: 2rem;
+        padding: 2em;
+    }
+
+    .reviews-person-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    
+    .reviews-person-1-wrapper,
+    .reviews-person-2-wrapper {
+        width: 100%;
+    }
+
+    .reviews-person-2-wrapper {
+        margin-top: 3rem;
+    }
+
+    .picture-album-section {
+        height: auto;
+    }
+
+    .picture-album-container img {
+        width: 100%;
+        max-width: none;
+        max-height: none;
+    }
+
+    .footer-wrapper-1,
+    .footer-wrapper-2 {
+        font-size: 0.75rem;
+    }
+
+    .footer-wrapper-2 {
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .main-page {
+        min-width: 769px;
+        max-width: 1024px;
+    }
+
+    nav {
+        padding: 0.5em;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    .icon-menu {
+        display: block;
+    }
+
+    .hero-section {
+        max-height: 80%;
+    }
+
+    .hero-text {
+        bottom: 5%;
+        right: 15%;
+        font-size: 4rem;
+    }
+
+    .about-content {
+        width: 80%;
+    }
+    
+    .about-img {
+        object-fit: cover;
+        max-height: 500px;
+    }
+
+    .about-text {
+        max-width: 300px;
+    }
+
+    .what-we-do-section {
+        height: 500px;
+    }
+
+    .what-we-do-text {
+        right: 20%;
+        left: 20%;
+    }
+
+    .what-we-do-icon {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    .our-trips-section {
+        margin-top: 2rem;
+        height: 750px;
+    }
+
+    .group-images img, .our-trips-title {
+        width: 180px;
+        margin-right: 0.75rem;
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .where-to-go-section {
+        justify-content: space-evenly;
+    }
+
+    .where-to-go-container {
+        width: 80%;
+    }
+
+    .where-to-go-title {
+        width: 15%;
+    }
+
+    .where-to-go-text-wrapper {
+        width: 60%;
+    }
+
+    .reviews-section {
+        justify-content: space-evenly;
+    }
+
+    .reviews-person-container {
+        gap: 2em;
+    }
+
+    .reviews-person-text {
+        width: 80%;
+    }
+
+    .reviews-person-1-wrapper, .reviews-person-2-wrapper {
+        align-items: center;
+    }
+
+    .picture-album-section {
+        height: auto;
+        margin-top: 2rem;
+        align-items: flex-end;
+    }
+}
